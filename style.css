@@ -1,0 +1,56 @@
+        /* animasi ikon header */
+        .bar {
+            transition: all 0.3s ease;
+        }
+        .bar-1.active {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .bar-2.active {
+            opacity: 0;
+        }
+        .bar-3.active {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Animasi ketika ikon header di pencet*/
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .menu-animate {
+            animation: slideDown 0.5s ease forwards;
+        }
+
+        /*css buat merubah warna*/
+        @keyframes colorChange {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: purple; }
+            100% { color: orange; }
+        }
+        .text-color-change {
+            animation: colorChange 5s infinite;
+        }
+
+        /*buat section project*/
+        .card:hover .content {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        /* Untuk klik animasi */
+        .card:active .content {
+            transform: scale(0.95);
+        }
