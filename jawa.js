@@ -15,7 +15,8 @@ if (!menu.classList.contains('hidden')) {
     });
 }
 
-/* projek nya*/
+
+
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {

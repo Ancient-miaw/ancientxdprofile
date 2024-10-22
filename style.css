@@ -62,19 +62,35 @@
         box-shadow: 0 0 15px blue;
     }
     25% {
-        border-color: red;
-        box-shadow: 0 0 15px red;
+        border-color: cyan;
+        box-shadow: 0 0 15px cyan;
     }
     50% {
-        border-color: yellow;
-        box-shadow: 0 0 15px yellow;
+        border-color:  blue;
+        box-shadow: 0 0 15px blue;
     }
     75% {
-        border-color: green;
-        box-shadow: 0 0 15px green;
+        border-color: cyan;
+        box-shadow: 0 0 15px cyan;
     }
     100% {
         border-color: blue;
         box-shadow: 0 0 15px blue;
     }
 }
+
+        /* Animasi untuk zoom in saat hover */
+        .card:hover .content {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        /* Untuk klik animasi */
+        .card:active .content {
+            transform: scale(0.95);
+        }
